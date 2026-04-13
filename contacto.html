@@ -57,3 +57,34 @@
         </div>
       </div>
     </aside>
+    <section class="contact-form-wrap">
+      <div class="form-card">
+        <h3 class="form-title">Formulario de Contacto</h3>
+        <p class="form-subtitle">Todos los campos marcados con <span class="req">*</span> son obligatorios.</p>
+
+        <div id="form-message" class="form-message hidden"></div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre" title="Ingresa tus nombres completos">Nombre <span class="req">*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              <span class="error-msg" id="err-nombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="apellido" title="Ingresa tus apellidos completos">Apellido <span class="req">*</span></label>
+              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+              <span class="error-msg" id="err-apellido"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" title="Usa un correo que revises frecuentemente">Correo electrónico <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+            <span class="error-msg" id="err-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono" title="Incluye el código de área si estás fuera de Colombia">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" />
+          </div>
